@@ -1,5 +1,7 @@
 # Compose Pixel Perfect Design
 
+[![](https://jitpack.io/v/Coderkube-App/compose-pixel-perfect-design.svg)](https://jitpack.io/#Coderkube-App/compose-pixel-perfect-design)
+
 A lightweight, powerful Jetpack Compose library designed to help developers achieve pixel-perfect, responsive UI across all Android screen sizes. By using percentage-based scaling and smart safe area utilities, you can ensure your design looks consistent on any device.
 
 ## About
@@ -34,17 +36,26 @@ In modern Android development, fragmentation is a major challenge. **Compose Pix
 
 ## Dependency Setup
 
-### 1. Add the module to your project
-Include the `:pixelperfectdesign` module in your `settings.gradle.kts`:
+### 1. Add JitPack to your repositories
+Add it in your root `settings.gradle.kts` at the end of repositories:
 
 ```kotlin
-include(":pixelperfectdesign")
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
 ```
 
-### 2. Implement in your app's build.gradle.kts
+### 2. Add the dependency
+Add this to your app's `build.gradle.kts`:
+
 ```kotlin
 dependencies {
-    implementation(project(":pixelperfectdesign"))
+    implementation("com.github.Coderkube-App:compose-pixel-perfect-design:v1.0.1")
 }
 ```
 
