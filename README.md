@@ -55,7 +55,7 @@ Add this to your app's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.Coderkube-App:compose-pixel-perfect-design:v1.0.1")
+    implementation("com.github.Coderkube-App:compose-pixel-perfect-design:v1.0.2")
 }
 ```
 
